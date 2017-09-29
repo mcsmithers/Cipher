@@ -5,13 +5,20 @@ from collections import Counter
 
 # First let 's open the text file and get a block of scrambled text
 with open('scrambled_text.txt') as scrambled_text_from_file:
-  scrambled_text_from_file = scrambled_text_from_file.read()
+    scrambled_text_from_file = scrambled_text_from_file.read()
 print("Here is the original text:")
 print(scrambled_text_from_file)
 
 # Now we sort it out and count the number of times a character shows up
 print("Here is a count on how often a character appears: ")
-counted_text = Counter(scrambled_text_from_file)
-print (counted_text)
+counted_text = Counter(scrambled_text_from_file).most_common()
+print(counted_text)
+
+print_string = ''
+for (item in counted_text):
+    if (item[0] == '_'):
+        break
+print_string = print_string + item[0]
+print(print_string)
 
 # Final result spells keyboarding
