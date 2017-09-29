@@ -10,15 +10,13 @@ print("Here is the original text:")
 print(scrambled_text_from_file)
 
 # Now we sort it out and count the number of times a character shows up
-print("Here is a count on how often a character appears: ")
 counted_text = Counter(scrambled_text_from_file).most_common()
-print(counted_text)
 
 print_string = ''
-for (item in counted_text):
+for item in counted_text:
     if (item[0] == '_'):
         break
-print_string = print_string + item[0]
+    print_string = print_string + item[0]
 print(print_string)
 
 # Final result spells keyboarding

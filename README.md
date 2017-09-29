@@ -1,7 +1,7 @@
-"# Cipher" 
+# Cipher
 
 ### Summary
-This is a simple Python application that will unscamble a cipher text.
+This is a simple Python application that will unscramble a cipher text.
 
 ### Requirements
 You will need Python 3 on your system which can be found [here](python.org).  Make sure you are using Python 3 instead of 2 since the syntax differs enough to make a difference here.
